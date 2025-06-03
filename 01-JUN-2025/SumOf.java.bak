@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class SumOf 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		for (int i=1, i1=sc.nextInt(),i2=sc.nextInt(),i3=sc.nextInt(),i4=sc.nextInt(),i5=sc.nextInt();i<=100;i++)
+		{
+			System.out.println();
+		}
+		
+		//System.out.println("Hello World!");
+	}
+}

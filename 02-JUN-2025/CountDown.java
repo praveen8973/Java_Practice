@@ -1,0 +1,15 @@
+class CountDown
+{
+	public static void main(String[] args) throws Exception
+	{
+		for (int i=10;i>=0;i--)
+		{
+			if (true)
+			{
+				System.out.println("CountDown--"+i);
+				Thread.sleep(1000);
+			}}
+		Thread.sleep(500);
+		System.out.println("Lift Off!!");
+	}
+}

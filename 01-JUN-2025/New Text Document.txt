@@ -1,0 +1,16 @@
+Basic Repetition & Summation
+
+Print Numbers: Use a for loop to print numbers from 1 to 10.
+Print Even Numbers: Use a for loop to print even numbers from 2 to 20.
+Print Odd Numbers: Use a while loop to print odd numbers from 1 to 15.
+Countdown: Use a for loop to print a countdown from 10 to 1, then "Lift Off!".
+Sum of N Numbers (for): Calculate the sum of the first 100 natural numbers using a for loop.
+Sum of N Numbers (while): Calculate the sum of numbers from 1 to a user-entered positive integer n using a while loop.
+---------Average of Numbers: Get 5 numbers from the user and calculate their average using a for loop.
+-----------------avg= total of counts/no of counts;
+
+
+User Input & Validation
+Positive Number Loop: Use a do-while loop to repeatedly ask the user for a positive number until they enter one.
+Password Validator: Use a while loop to keep asking the user for a password until they enter "Java123".
+Menu Driven Program: Create a simple menu (e.g., 1. Option A, 2. Option B, 3. Exit). Use a do-while loop to display the menu and process choices until the user selects 'Exit'.
