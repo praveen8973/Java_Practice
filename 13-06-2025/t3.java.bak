@@ -1,0 +1,10 @@
+class t3
+{
+	public static void ram(){
+		System.out.println("Hi My name is Ram");
+	}
+	public static void Sita(String[] args) 
+	{
+		System.out.println("Hi My name is Sita");
+	}
+}

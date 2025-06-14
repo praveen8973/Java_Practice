@@ -1,0 +1,14 @@
+class wilestmnt 
+{
+	public static void main(String[] args) 
+	{
+		int count=1;
+		System.out.println("Code Start");
+		while (count<=5)
+		{
+			System.out.println("JavaScript - "+count);
+			count++;
+		}
+		System.out.println("Code End");
+	}
+}

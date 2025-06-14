@@ -1,0 +1,14 @@
+class t4 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hi!");
+		display();
+		System.out.println("Bye!");
+		display();
+	}
+	public static void display(){
+		System.out.println("Praveen");
+		display();
+	}
+}

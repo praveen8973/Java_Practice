@@ -1,0 +1,9 @@
+class jj 
+{
+	public static void main(String[] args) 
+	{
+		int[] a,b,c;
+		//String colors={"Red","Yellow","Blue"};
+		//System.out.println(toString.colors[2]);
+	}
+}

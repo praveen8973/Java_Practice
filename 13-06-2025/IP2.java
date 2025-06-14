@@ -1,0 +1,25 @@
+import java.util.*;
+class ip2 
+{
+	public static void FirstLargest(int[]a) 
+	{
+		int max=Integer.MIN_VALUE;
+		for (int i=0;i<a.length;i++)
+		{
+			if (a[i]>max)
+			{
+				max=a[i];
+			}
+			return;
+		}
+		
+		}
+		public static void main(String[]args){
+			int a[]={2,3,1,7,4};
+			System.out.println(Arrays.toString(a));
+			System.out.println("FirstLargest Number is:"+FirstLargest(a));
+		}
+		//System.out.println(Integer.MIN_VALUE);
+		//System.out.println(Integer.MAX_VALUE);
+	
+}
