@@ -1,0 +1,311 @@
+import java.util.Scanner;
+class Paraak 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) throws Exception
+	{
+		//System.out.println("");
+		System.out.println("---------------------------------------");
+		System.out.println("***********Welcome to Paraak********");
+		System.out.println("---------------------------------------");
+		System.out.println("Hotels Are There:)");
+		System.out.println("1.ITC\n3.Chozha\n3.Grand Park");
+		System.out.print("Select Your Hotels:");
+		int selectHotel=sc.nextInt();
+		
+		switch(selectHotel){
+				//Hotel ITC
+		case 1:
+			System.out.println("---------------------------------------");
+			System.out.println("*****Welcome To ITC*********");
+			System.out.println("---------------------------------");
+			System.out.println("Select Your Food in this Menu:");
+			System.out.println("1.Parotta\n2.naan\n3.poori");
+			System.out.print("Select Your Food:");
+			int selectFoodITC=sc.nextInt();
+			
+				switch(selectFoodITC){
+					case 1:           //parotta section
+						int parotta=180;
+						System.out.println("Parotta price is $"+parotta);
+						System.out.print("Enter Your Parotta Quantity in Pieces:");
+						int parottaqty=sc.nextInt();
+						System.out.println("---------------------------------------");
+						//bill1
+						double bill1=parotta*parottaqty;
+						System.out.println("Total amount is:$"+bill1);
+						System.out.println("---------------------------------------");
+		
+		//billing section1
+		System.out.println("Select Your payment method:");
+		System.out.println("1.Phonepe\n2.GooglePay");
+		System.out.println("Select payment method:");
+		int paymentmethod=sc.nextInt();
+		//OTP1
+		int sys_otp=1234;
+		System.out.println("Your otp is:"+sys_otp);
+		System.out.println("Enter Your otp here:");
+		int user_otp=sc.nextInt();
+		if(sys_otp==user_otp)
+			System.out.println("Your Order is Ready!!!");
+		else
+			System.out.println("Your OTP is mismatched try again!");
+				break;
+				
+				//naan section
+		case 2:           //naan section
+						int naan=250;
+						System.out.println("naan price is $"+naan);
+						System.out.print("Enter Your naan Quantity in Pieces:");
+						int naanqty=sc.nextInt();
+						System.out.println("---------------------------------------");
+						//bill1
+						double bill2=naan*naanqty;
+						System.out.println("Total amount is:$"+bill2);
+						System.out.println("---------------------------------------");
+		
+		//billing section1
+		System.out.println("Select Your payment method:");
+		System.out.println("1.Phonepe\n2.GooglePay");
+		System.out.println("Select payment method:");
+		int paymentmethod2=sc.nextInt();
+		//OTP1
+		int sys_otp2=2456;
+		System.out.println("Your otp is:"+sys_otp2);
+		System.out.println("Enter Your otp here:");
+		int user_otp2=sc.nextInt();
+		if(sys_otp2==user_otp2)
+			System.out.println("Your Order is Ready!!!");
+		else
+			System.out.println("Your OTP is mismatched try again!");
+				break;
+				
+		//poori section
+		case 3:           //poori section
+						int poori=70;
+						System.out.println("poori price is $"+poori);
+						System.out.print("Enter Your poori Quantity in Pieces:");
+						int pooriqty=sc.nextInt();
+						System.out.println("---------------------------------------");
+						//bill1
+						double bill3=poori*pooriqty;
+						System.out.println("Total amount is:$"+bill3);
+						System.out.println("---------------------------------------");
+		
+		//billing section1
+		System.out.println("Select Your payment method:");
+		System.out.println("1.Phonepe\n2.GooglePay");
+		System.out.println("Select payment method:");
+		int paymentmethod3=sc.nextInt();
+		//OTP1
+		int sys_otp3=1111;
+		System.out.println("Your otp is:"+sys_otp3);
+		System.out.println("Enter Your otp here:");
+		int user_otp3=sc.nextInt();
+		if(sys_otp3==user_otp3)
+			System.out.println("Your Order is Ready!!!");
+		else
+			System.out.println("Your OTP is mismatched try again!");
+				break;
+				}
+		break;
+		
+		//Hotel Chozha
+		case 2:
+			System.out.println("---------------------------------------");
+			System.out.println("*****Welcome To ITC*********");
+			System.out.println("---------------------------------");
+			System.out.println("Select Your Food in this Menu:");
+			System.out.println("1.Pongal\n2.Idli\n3.Dosa");
+			System.out.print("Select Your Food:");
+			int selectFoodChozha=sc.nextInt();
+			
+				switch(selectFoodChozha){
+					case 1:           //Pongal section
+						int Pongal=90;
+						System.out.println("Pongal price is $"+Pongal);
+						System.out.print("Enter Your Pongal Quantity in Pieces:");
+						int Pongalqty=sc.nextInt();
+						System.out.println("---------------------------------------");
+						//bill4
+						double bill4=Pongal*Pongalqty;
+						System.out.println("Total amount is:$"+bill4);
+						System.out.println("---------------------------------------");
+		
+		//billing section1
+		System.out.println("Select Your payment method:");
+		System.out.println("1.Phonepe\n2.GooglePay");
+		System.out.println("Select payment method:");
+		int paymentmethod=sc.nextInt();
+		//OTP1
+		int sys_otp4=1334;
+		System.out.println("Your otp is:"+sys_otp4);
+		System.out.println("Enter Your otp here:");
+		int user_otp4=sc.nextInt();
+		if(sys_otp4==user_otp4)
+			System.out.println("Your Order is Ready!!!");
+		else
+			System.out.println("Your OTP is mismatched try again!");
+				break;
+				
+				//Idli section
+		case 2:           //Idli section
+						int Idli=169;
+						System.out.println("Idli price is $"+Idli);
+						System.out.print("Enter Your Idli Quantity in Pieces:");
+						int Idliqty=sc.nextInt();
+						System.out.println("---------------------------------------");
+						//bill1
+						double bill5=Idli*Idliqty;
+						System.out.println("Total amount is:$"+bill5);
+						System.out.println("---------------------------------------");
+		
+		//billing section1
+		System.out.println("Select Your payment method:");
+		System.out.println("1.Phonepe\n2.GooglePay");
+		System.out.println("Select payment method:");
+		int paymentmethod5=sc.nextInt();
+		//OTP1
+		int sys_otp5=2456;
+		System.out.println("Your otp is:"+sys_otp5);
+		System.out.println("Enter Your otp here:");
+		int user_otp5=sc.nextInt();
+		if(sys_otp5==user_otp5)
+			System.out.println("Your Order is Ready!!!");
+		else
+			System.out.println("Your OTP is mismatched try again!");
+				break;
+				
+		//Dosa section
+		case 3:          
+						int Dosa=180;
+						System.out.println("Dosa price is $"+Dosa);
+						System.out.print("Enter Your Dosa Quantity in Pieces:");
+						int Dosaqty=sc.nextInt();
+						System.out.println("---------------------------------------");
+						//bill1
+						double bill3=Dosa*Dosaqty;
+						System.out.println("Total amount is:$"+bill3);
+						System.out.println("---------------------------------------");
+		
+		//billing section1
+		System.out.println("Select Your payment method:");
+		System.out.println("1.Phonepe\n2.GooglePay");
+		System.out.println("Select payment method:");
+		int paymentmethod6=sc.nextInt();
+		//OTP1
+		int sys_otp6=1111;
+		System.out.println("Your otp is:"+sys_otp6);
+		System.out.println("Enter Your otp here:");
+		int user_otp6=sc.nextInt();
+		if(sys_otp6==user_otp6)
+			System.out.println("Your Order is Ready!!!");
+		else
+			System.out.println("Your OTP is mismatched try again!");
+		
+		
+		break;
+				}
+		break;
+				
+		//Grand Park Hotel
+		case 3:
+			System.out.println("---------------------------------------");
+			System.out.println("*****Welcome To Grand Park Hotel*********");
+			System.out.println("---------------------------------");
+			System.out.println("Select Your Food in this Menu:");
+			System.out.println("1.Pulao\n2.Roast\n3.Veg_Biryani");
+			System.out.print("Select Your Food:");
+			int selectFoodGrandPark=sc.nextInt();
+			
+				switch(selectFoodGrandPark){
+					case 1:           //Pulao section
+						int Pulao=680;
+						System.out.println("Pulao price is $"+Pulao);
+						System.out.print("Enter Your Pulao Quantity in Pieces:");
+						int Pulaoqty=sc.nextInt();
+						System.out.println("---------------------------------------");
+						//bill7
+						double bill7=Pulao*Pulaoqty;
+						System.out.println("Total amount is:$"+bill7);
+						System.out.println("---------------------------------------");
+		
+		//billing section1
+		System.out.println("Select Your payment method:");
+		System.out.println("1.Phonepe\n2.GooglePay");
+		System.out.println("Select payment method:");
+		int paymentmethod90=sc.nextInt();
+		//OTP1
+		int sys_otp7=1334;
+		System.out.println("Your otp is:"+sys_otp7);
+		System.out.println("Enter Your otp here:");
+		int user_otp7=sc.nextInt();
+		if(sys_otp7==user_otp7)
+			System.out.println("Your Order is Ready!!!");
+		else
+			System.out.println("Your OTP is mismatched try again!");
+				break;
+				
+				//Roast section
+		case 2:           //Roast section
+						int Roast=230;
+						System.out.println("Roast price is $"+Roast);
+						System.out.print("Enter Your Idli Quantity in Pieces:");
+						int Roastqty=sc.nextInt();
+						System.out.println("---------------------------------------");
+						//bill1
+						double bill8=Roast*Roastqty;
+						System.out.println("Total amount is:$"+bill8);
+						System.out.println("---------------------------------------");
+		
+		//billing section1
+		System.out.println("Select Your payment method:");
+		System.out.println("1.Phonepe\n2.GooglePay");
+		System.out.println("Select payment method:");
+		int paymentmethod8=sc.nextInt();
+		//OTP1
+		int sys_otp8=2456;
+		System.out.println("Your otp is:"+sys_otp8);
+		System.out.println("Enter Your otp here:");
+		int user_otp8=sc.nextInt();
+		if(sys_otp8==user_otp8)
+			System.out.println("Your Order is Ready!!!");
+		else
+			System.out.println("Your OTP is mismatched try again!");
+				break;
+				
+		//Veg_Biryani section
+		case 3:          
+						int Veg_Biryani=220;
+						System.out.println("Veg_Biryani price is $"+Veg_Biryani);
+						System.out.print("Enter Your Veg_Biryani Quantity in Pieces:");
+						int Veg_Biryaniqty=sc.nextInt();
+						System.out.println("---------------------------------------");
+						//bill1
+						double bill9=Veg_Biryani*Veg_Biryaniqty;
+						System.out.println("Total amount is:$"+bill9);
+						System.out.println("---------------------------------------");
+		
+		//billing section1
+		System.out.println("Select Your payment method:");
+		System.out.println("1.Phonepe\n2.GooglePay");
+		System.out.println("Select payment method:");
+		int paymentmethod9=sc.nextInt();
+		//OTP1
+		int sys_otp9=1111;
+		System.out.println("Your otp is:"+sys_otp9);
+		System.out.println("Enter Your otp here:");
+		int user_otp9=sc.nextInt();
+		if(sys_otp9==user_otp9)
+			System.out.println("Your Order is Ready!!!");
+		else
+			System.out.println("Your OTP is mismatched try again!");
+				break;
+				}
+		
+		
+		}
+		
+	}
+	}
+

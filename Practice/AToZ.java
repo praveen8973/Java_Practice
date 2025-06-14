@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class AToZ
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		char letter='a';
+		while(letter<='z'){
+		System.out.print(letter);	
+			//letter++;
+		}
+		//System.out.println("Hello World!");
+	}
+}
+

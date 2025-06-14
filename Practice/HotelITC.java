@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+class Swiggy
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args)
+	{
+		boolean flag = true; 
+
+		do {
+			System.out.println("Welcome To Swiggy");
+			System.out.println("--------------------------------------");
+			System.out.println("Hotel List:");
+			System.out.println("----------------------");
+			System.out.println("1.Hotel Taj\n2.A2B\n3.Exit");
+			System.out.print("Enter your choice: "); 
+			int hotelSelection=sc.nextInt();
+
+			switch(hotelSelection){
+				case 1:{
+					System.out.println("--------------------------------------");
+					System.out.println("********Welcome to Hotel Taj********");
+					
+					System.out.println("--------------------------------------");
+					break;
+				}
+				case 2:{
+					System.out.println("--------------------------------------");
+					System.out.println("********Welcome to A2B********");
+					System.out.println("--------------------------------------");
+					break;
+				}
+				case 3:{
+					System.out.println("Exiting application..."); 
+					flag = false; 
+					break;
+				}
+				default: { 
+					System.out.println("Invalid selection. Please choose 1, 2, or 3.");
+					break;
+				}
+			}
+		} while(flag); 
+
+		System.out.println("********Thank You Visit Again********");
+
+		
+	}
+}

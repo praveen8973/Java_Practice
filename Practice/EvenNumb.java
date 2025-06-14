@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class EvenNumb
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter n'th Number:");
+		int n=sc.nextInt();
+		System.out.println("Enter i value:");
+		//int i=sc.nextInt();
+		for (int i=sc.nextInt();i<=n;i++)
+		{
+			if(i%2==0){
+			System.out.println(i);
+			}
+		}
+		//System.out.println("Hello World!");
+	}
+}
