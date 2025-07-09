@@ -1,0 +1,352 @@
+03-07-2025
+----------
+Static:
+-------
+The resource which is same for all the objects should be represented by static.
+In java "static" is a keyword as well as modifier. we are having 3 types of static members.
+1. static initializer
+2. static variable
+3. static method
+
+example:
+languages(static): java, scritpt, c, c++
+kitchen(static): kitchen accesssories
+School(static): students, teachers
+
+
+static initializer:
+-------------------
+1. Single line static initializer
+2. Multi-Line static initializer
+
+what is static variable:
+------------------------
+any global variable which is prefix with static is called as static variable.
+the static resource of one class can we access another class with the help of class name.
+
+example:
+--------
+class A{
+static int A;
+static String skill;
+
+public static void main(String[]args){
+System.out.println(B.pi);
+}
+}
+class B{
+static float pi=3.14;
+}
+
+What is static method?
+-----------------------
+Any method which is prefix with static is called as static method.
+
+example:
+---------
+class vlc{
+public static void playVideo(){
+System.out.println("Playing Video");
+}
+public static void playAudio(){
+System.out.println("Playing Audio");
+}
+}
+
+what is initializer?
+--------------------
+initializer are the beginning instructions. static initializer means beginning instructions which is same for all objects.
+in static initializer we are having 2 types that is,
+1. single line static initializer
+2. Multi line static initializer
+
+what is single-line static initializer:
+---------------------------------------
+Any static variable which is initialized in a single line is called as single line static initializer.
+
+example:
+--------
+class student{
+static int sid=12; // single line static init
+static String sname="Dinga"; //single line static init
+static double marks; //static variable declaration
+}
+
+what is multi-line static initializer?
+--------------------------------------
+any block which is just prefix with static is called multi-line static initializer. 
+we cannot use access modifier, modifier, return type from multi-line static initializer.
+the area created by the multi-line static initializer is called as the static context.(local area).
+
+example:
+--------
+class Student{
+static{
+//static context (local area)
+int a=20; //<--- local variable
+}
+static{
+int a=10; //<--local variable
+}
+}
+
+--------
+diagram:
+--------
+-----------------------------------------------------------------------------------------------------------------
+Non-Static:
+-----------
+the resource which is not same for all the objects should be represented by non static.
+with respect to non static we are having 3 types:
+1. non static variable
+2. non static method
+3. non static initializer
+
+non static initializer
+----------------------
+1. single-line non-static initializer
+2. multi-line non-static initializer
+
+non static variables:
+----------------------
+any global variable which is not prefix with static is called as non static variable.
+we cannot say local variables as non-static variables. there are just local variables.
+example:
+-------
+class Student{
+int sid; //non-static variable
+double marks; //non-static variable
+String sname; //non-static variable
+
+public void study(){
+int x=10; //local variable
+}
+}
+
+example
+----------
+principal(static resource):
+
+non static resource
+mangi
+98
+manga
+56
+dinga
+99
+
+
+what is non-static method?
+--------------------------
+any method which is not prefix with static is called as non-static method.
+example:
+-------
+class GooglePlay{
+public void sendAmount(double amount){
+//non static context(local area)
+s.o.pln("SEnding...");
+}
+p.v. receiveamount(double amount){
+//non static context(local area)
+s.o.pln("REceived...");
+}
+}
+
+what is single line non static initializer?
+------------------------------------------
+any non static variable which is initialized in a single line is called as single line non-static initializer.
+
+example:
+--------
+class card{
+String card_holder="Manga";
+int cvv=174;
+double limit=8000;
+}
+
+what is Multi line non static initializer?
+------------------------------------------
+any block which is not prefix with anything is called Multi line non static initializer. it is also called as anonymous block.
+
+example:
+--------
+class Card{
+{
+//non-static context area
+int x=10; //local area
+}
+{
+//Task
+}
+}
+
+--------------
+Heap Diagram:
+--------------
+------------------------------------------------------------------------------------------------------------------------------
+
+04-07-2025
+-----------
+class loading process:
+whenever, we execute java program following memOry blocks will be created inside JRE.
+Method area
+class area
+Stack area
+Heap area
+
+Class Block:
+------------
+Class keyword will create block of memory inside the class static area is called as class block.
+All the methods and multiline initializers will be loaded inside the method area.
+A table is created inside the class block.
+All the static members present inside the method area is loaded inside the table of class block.
+All the static variables will be loaded inside the class block with the default values.
+All the static initializers will be executed from top to bottom approach.
+Once all the static initializers execution is completed main method is called.
+--------------------
+Class Block Diagram:
+--------------------
+
+program:(very very important)
+
+class Demo{
+int a=10; //slnsi
+static {
+System.out.println("Hi from SMLI-1");
+}
+
+{
+//
+System.out.println("Hi from NSMLI-1");
+}
+public static void main(String[] args){
+//s.m
+int b=100;
+System.out.println("b:"+b);
+System.out.println("b:"+Demo.b);
+}
+public void display(){
+System.out.println("Hi Iam Display Function");
+}
+static{
+//mlsi
+System.out.println("Hi from SMLI-2");
+}
+}
+---------------------
+OUTPUT:
+-------
+Hi From SMLI-1
+Hi From SMLI-2
+b:100
+b:true
+------------------------------------------------------------------------------------
+class Test
+{
+static{
+System.out.println("Hi from SMLI-1");
+System.out.println("Value-"+Test.pi);
+}
+
+static double pi=3.14;
+String skill="Java";
+}
+
+{
+System.out.println("Hi from NSMLI-1");
+}
+
+public static void main(String[] args){
+System.out.println("Hi");
+System.out.println("Pi-"+pi);
+System.out.println("Bye");
+}
+static{
+System.out.println("JavaScript");
+}
+public void run(){
+System.out.println("Running...");
+}
+}
+
+output:
+-------
+Hi I am SMLI-1
+Value-0.0
+JavaScript
+------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

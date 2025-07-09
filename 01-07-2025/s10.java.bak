@@ -1,0 +1,9 @@
+class s10 
+{
+	//convert char array into string
+	public static void main(String[] args) 
+	{
+		char[] ch={'p','a','v','i'};
+		System.out.println(ch);
+	}
+}

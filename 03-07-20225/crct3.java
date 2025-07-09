@@ -1,0 +1,25 @@
+import java.util.*;
+class crct3 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+	
+		String str="J1v2v3";
+		
+		char ch[]=str.toCharArray();
+		System.out.println(Arrays.toString(ch));
+		
+		int sum=0;
+		
+		for (int i=0;i<ch.length;i++)
+		{
+			if (ch[i]>48 && ch[i]<57)
+		{
+				sum+=ch[i];
+				System.out.println(sum);
+		}
+		}
+		
+	}
+}

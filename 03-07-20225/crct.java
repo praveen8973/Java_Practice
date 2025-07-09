@@ -1,0 +1,26 @@
+import java.util.*;
+class crct 
+{
+	public static void main(String[] args) 
+	{
+		int a[]={1,2,3,4,5};
+		for (int i=0;i<a.length;i++)
+		{
+			
+		for (int j=a.length-1;j<a.length;j--)
+			{
+				if (a[i]==a[j])
+				{
+					break;
+				}
+				else if ((a[i]>=0)==(a[j]>=0))
+				{
+					System.out.println("Yes! it's palindrome");
+				}
+				else
+					System.out.println("No");
+			}
+		}
+		
+	}
+}
