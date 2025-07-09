@@ -1,0 +1,13 @@
+class t1 
+{
+	public static void main(String[] args) 
+	{
+		System.out.print("Original Price:");
+		double P=1298; //original price
+		
+		double D=25; //Discount Percentage
+		double T=18; //Sales Tax Percentage
+		double finalPrice=(P * (1 - (D/100)) * (1 + (T/100)));
+		System.out.println("Final Price Is:"+finalPrice);
+	}
+}
