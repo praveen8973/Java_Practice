@@ -1,0 +1,21 @@
+import java.util.*;
+class S8
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		String str="Praveen";
+		StringBuffer str1=new StringBuffer("Praveen 1");
+		StringBuilder str2=new StringBuilder("Praveen 2");
+		System.out.println(str);
+		System.out.println(str1);
+		System.out.println(str2);
+		
+		//store int array to print
+		int[] a1={4,5,6,7};
+		System.out.println(Arrays.toString(a1));
+		String s1="Praveen is a Boy";
+		System.out.println(s1.charAt(0));
+		
+	}
+}

@@ -1,0 +1,15 @@
+import java.util.*;
+class Storage 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter Your N'th Number:");
+		int n=sc.nextInt();
+		int a[]=new int[n-1];
+		for (int i=0;i<a.length;i++)
+		{
+			
+		}
+	}
+}

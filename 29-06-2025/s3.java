@@ -1,0 +1,13 @@
+import java.util.*;
+class s3
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void addMul(int a, int b,int c){
+		c=a*b;
+	}
+	public static void main(String[] args){
+		addMul(int a, int b,int c);
+		System.out.println(c);
+	}
+	
+}

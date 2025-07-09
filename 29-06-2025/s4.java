@@ -1,0 +1,21 @@
+import java.util.*;
+class s4 
+{
+	public static void missingNo(int[] a){
+		int k=1;
+		for (int i=0;i<a.length;k++;i++)
+		{
+			if (a[i]!=k)
+			{
+				System.out.println(k+" ");
+				i--;
+			}
+		}
+	}
+	public static void main(String[] args) 
+	{
+		int[] a={1,3,6,7};
+		System.out.println(Arrays.toString(a));
+		missingNO(a);
+	}
+}
