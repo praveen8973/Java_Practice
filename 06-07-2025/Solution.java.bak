@@ -1,0 +1,10 @@
+import java.util.*;
+class Solution 
+{
+	public static void main(String[] args) 
+	{
+		int[] num1={1,2,3,0,0,0};
+		int[] num2={2,5,6};
+		System.out.println("Hello World!");
+	}
+}

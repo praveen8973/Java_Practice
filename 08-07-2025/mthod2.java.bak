@@ -1,0 +1,22 @@
+//Learn method with putting paranthesis
+class mthod2
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Msg1");
+		System.out.println("Sum:"+sum(1,4)+"\n Sub"+sub(71,34)+"\n Mul:"+mul(100,5)+"\n Div:"+div(50,5));
+		System.out.println("Msg2");
+	}
+	public static int sum(int a,int b){
+		return a+b;
+	}
+	public static int sub(int c, int d){
+		return c-d;
+	}
+	public static int mul(int e,int f){
+		return e*f;
+	}
+	public static int div(int g, int h){
+		return g/h;
+	}
+}
